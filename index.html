@@ -1,51 +1,44 @@
 <!DOCTYPE html>
 <html lang="pt">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>jokenpô</title>
-    <link rel="stylesheet" href="estilo.css">
-</head>
+    <link rel="stylesheet" href="estilo.css" />
+  </head>
 
-<body>
-    
-    <center>
-        <h1>Js - jokenpô</h1>
-        <h2>Jogador</h2>
-        <img src="img/Pedra.png" height="70" width="70" alt="Pedra">
-        <img src="img/Papel.png" height="70" width="70" alt="Papel">
-        <img src="img/Tesoura.png" height="70" width="70" alt="Tesoura">
-        <form name="frmJokempo">
-            <input type="radio" name="grupo" id="pedra"> Pedra
-            <input type="radio" name="grupo" id="papel"> Papel
-            <input type="radio" name="grupo" id="tesoura"> Tesoura
-            <p>
-                <input type="button" value="Jogar" onclick="jogar()">
-                <input type="button" value="Reset" onclick="resetar()">
-            </p>
-        </form>
-        <hr>
-        <h2>Computador</h2>
-        <img src="img/Pc_play.png" height="220" width="220" alt="PC" id="pc">
-        <hr>
-        <h3 id="placar"> </h3>
-        <span>JOGADOR </span>
-        <span id="scorejogador"><b>0</b></span>
-        <span> : </span>
-        <span id="scorecpu"><b>0</b></span>
-        <span> COMPUTADOR </span>
-        <hr>
-        <span id="scoreEmpate"><b>0</b></span>
-        <span> EMPATES </span>
-        <span id="jogadas"><b>0</b></span>
-        <span> JOGADAS </span>
-        <hr>
+  <body>
+    <h1>Js - jokenpô</h1>
+    <h2>Jogador</h2>
+    <img src="img/Pedra.png" height="70" width="70" alt="Pedra" />
+    <img src="img/Papel.png" height="70" width="70" alt="Papel" />
+    <img src="img/Tesoura.png" height="70" width="70" alt="Tesoura" />
+    <form name="frmJokempo">
+      <input type="radio" name="grupo" id="pedra" /> Pedra
+      <input type="radio" name="grupo" id="papel" /> Papel
+      <input type="radio" name="grupo" id="tesoura" /> Tesoura
+      <p>
+        <input type="button" value="Jogar" onclick="jogar()" />
+        <input type="button" value="Reset" onclick="resetar()" />
+      </p>
+    </form>
+    <hr />
+    <h2>Computador</h2>
+    <img src="img/Pc_play.png" height="220" width="220" alt="PC" id="pc" />
+    <hr />
+    <h3 id="placar"></h3>
+    <span>JOGADOR </span>
+    <span id="scorejogador"><b>0</b></span>
+    <span> : </span>
+    <span id="scorecpu"><b>0</b></span>
+    <span> COMPUTADOR </span>
+    <hr />
+    <span id="scoreEmpate"><b>0</b></span>
+    <span> EMPATES </span>
+    <span id="jogadas"><b>0</b></span>
+    <span> JOGADAS </span>
+    <hr />
 
-
-
-    </center>
     <script src="jokenpo.js"></script>
-</body>
-
+  </body>
 </html>
